@@ -140,3 +140,24 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+    .edu-row { display:flex; justify-content:space-between; align-items:baseline; gap:20px; padding:12px 0; border-bottom:1px solid #eee; }
+    .edu-row:last-child { border-bottom:0; }
+    .edu-school { font-weight:700; }
+    .edu-degree { color:#444; }
+    .edu-meta { color:#666; font-size:13px; text-align:right; white-space:nowrap; }
+    @media(max-width:560px) { .edu-row { flex-direction:column; gap:4px; } .edu-meta { text-align:left; white-space:normal; } }
+
+
+    .misc-list, .misc-list > tbody { display:block; width:100%; }
+    .misc-list > tbody > tr { display:grid; grid-template-columns:192px minmax(0,1fr); align-items:stretch; width:100%; }
+    .misc-list > tbody > tr > td { display:block; width:auto; min-width:0; box-sizing:border-box; padding:14px 16px; }
+    .misc-tile { height:100%; box-sizing:border-box; border-radius:12px; padding:20px 12px;
+                 display:flex; align-items:center; justify-content:center; text-align:center;
+                 font-size:20px; line-height:1.25; color:#1a1a1a; }
+    .misc-tile.c1 { background:#f0b775; } .misc-tile.c2 { background:#a9bda3; }
+    .misc-tile.c3 { background:#c2b89e; } .misc-tile.c4 { background:#ecdd96; }
+    .misc-items div { margin:4px 0; }
+    .misc-items .sub { color:#444; } .misc-items .when { color:#666; font-size:13px; }
+    @media(max-width:560px) { .misc-list > tbody > tr { grid-template-columns:minmax(0,1fr); }
+                              .misc-tile { max-width:260px; margin:auto; height:auto; } }
